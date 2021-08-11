@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.414" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry\target\test-classes;D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry\target\classes;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-server-core\1.1.9\ezyfox-server-core-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-codec\1.1.9\ezyfox-codec-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-common\1.1.9\ezyfox-common-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-security\1.1.9\ezyfox-security-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-io\1.1.9\ezyfox-io-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-concurrent\1.1.9\ezyfox-concurrent-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-util\1.1.9\ezyfox-util-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\properties-file\1.1.1\properties-file-1.1.1.jar;C:\Users\vuhai\.m2\repository\com\tvd12\reflections\1.0.0\reflections-1.0.0.jar;C:\Users\vuhai\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\vuhai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.30\slf4j-log4j12-1.7.30.jar;C:\Users\vuhai\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\vuhai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-mapping\1.1.9\ezyfox-mapping-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-json\1.1.9\ezyfox-json-1.1.9.jar;C:\Users\vuhai\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\vuhai\.m2\repository\com\tvd12\test-util\1.1.0\test-util-1.1.0.jar;C:\Users\vuhai\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\vuhai\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\vuhai\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\vuhai\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\vuhai\AppData\Local\Temp\surefire8812774483649594376\surefirebooter2693018676274610664.jar C:\Users\vuhai\AppData\Local\Temp\surefire8812774483649594376 2021-08-11T14-02-38_528-jvmRun1 surefire4023147037075454352tmp surefire_31952871224577035946tmp"/>
+    <property name="surefire.test.class.path" value="D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry\target\test-classes;D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry\target\classes;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-server-core\1.1.9\ezyfox-server-core-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-codec\1.1.9\ezyfox-codec-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-common\1.1.9\ezyfox-common-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-security\1.1.9\ezyfox-security-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-io\1.1.9\ezyfox-io-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-concurrent\1.1.9\ezyfox-concurrent-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-util\1.1.9\ezyfox-util-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\properties-file\1.1.1\properties-file-1.1.1.jar;C:\Users\vuhai\.m2\repository\com\tvd12\reflections\1.0.0\reflections-1.0.0.jar;C:\Users\vuhai\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\vuhai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.30\slf4j-log4j12-1.7.30.jar;C:\Users\vuhai\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\vuhai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-mapping\1.1.9\ezyfox-mapping-1.1.9.jar;C:\Users\vuhai\.m2\repository\com\tvd12\ezyfox-json\1.1.9\ezyfox-json-1.1.9.jar;C:\Users\vuhai\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\vuhai\.m2\repository\com\tvd12\test-util\1.1.0\test-util-1.1.0.jar;C:\Users\vuhai\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\vuhai\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\vuhai\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\vuhai\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vuhai"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre"/>
+    <property name="basedir" value="D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\vuhai\AppData\Local\Temp\surefire8812774483649594376\surefirebooter2693018676274610664.jar;C:\\Users\\vuhai\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.4\\org.jacoco.agent-0.8.4-runtime.jar"/>
+    <property name="sun.boot.class.path" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\resources.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\rt.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\sunrsasign.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\jsse.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\jce.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\charsets.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\jfr.jar;C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_292-b10"/>
+    <property name="user.name" value="vuhai"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\vuhai\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\vuhai\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.2"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="user.dir" value="D:\Projects\ezyfox-spaceshooter\java-server\server-app-entry"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\dotnet\;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\nodejs\;C:\Users\vuhai\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\JetBrains Rider 2020.1.0\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.2\bin;C:\Program Files\JetBrains\JetBrains Rider 2021.1.3\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\JetBrains\JetBrains Rider 2020.1.0\bin;;C:\Users\vuhai\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2\bin;;C:\Users\vuhai\AppData\Local\Programs\mongosh\;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\vuhai\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.ext.dirs" value="C:\Users\vuhai\.jdks\corretto-1.8.0_292\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+</testsuite>

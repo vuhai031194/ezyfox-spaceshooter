@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+server-startup,org.example,ApplicationStartup.DecoratedPluginEntryLoader.new PluginEntry() {...},40,0,2,0,7,0,4,0,3,0
+server-startup,org.example,ApplicationStartup.DecoratedAppEntryLoader.new AppEntry() {...},39,0,2,0,7,0,4,0,3,0
+server-startup,org.example,ApplicationStartup.DecoratedPluginEntryLoader,8,0,0,0,2,0,2,0,2,0
+server-startup,org.example,ApplicationStartup.DecoratedAppEntryLoader,8,0,0,0,2,0,2,0,2,0
+server-startup,org.example,ApplicationStartup,56,0,0,0,20,0,2,0,2,0

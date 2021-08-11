@@ -1,0 +1,5 @@
+org\example\ApplicationStartup.class
+org\example\ApplicationStartup$DecoratedAppEntryLoader$1.class
+org\example\ApplicationStartup$DecoratedPluginEntryLoader.class
+org\example\ApplicationStartup$DecoratedAppEntryLoader.class
+org\example\ApplicationStartup$DecoratedPluginEntryLoader$1.class

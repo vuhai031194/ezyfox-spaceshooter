@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllTests" duration-ms="42" started-at="2021-08-11T14:02:42 ICT" finished-at="2021-08-11T14:02:42 ICT">
+    <groups>
+    </groups>
+    <test name="All" duration-ms="42" started-at="2021-08-11T14:02:42 ICT" finished-at="2021-08-11T14:02:42 ICT">
+      <class name="org.example.plugin.test.PluginTest">
+        <test-method status="PASS" signature="test()[pri:0, instance:org.example.plugin.test.PluginTest@45e22def]" name="test" duration-ms="4" started-at="2021-08-11T14:02:42 ICT" finished-at="2021-08-11T14:02:42 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- org.example.plugin.test.PluginTest -->
+    </test> <!-- All -->
+  </suite> <!-- AllTests -->
+</testng-results>

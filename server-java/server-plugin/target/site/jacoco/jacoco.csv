@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+server-plugin,org.example.plugin.config,PluginConfig,83,0,14,0,2,0,14,0,7,0
+server-plugin,org.example.plugin.controller,UserLoginController,13,0,0,0,3,0,2,0,2,0
+server-plugin,org.example.plugin.controller,ServerReadyController,8,0,0,0,3,0,2,0,2,0
+server-plugin,org.example.plugin.service,WelcomeService,18,0,0,0,2,0,2,0,2,0
+server-plugin,org.example.plugin,PluginEntry,57,0,0,0,15,0,6,0,6,0
+server-plugin,org.example.plugin,PluginEntryLoader,7,0,0,0,2,0,2,0,2,0

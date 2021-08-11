@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GreetRequestController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">server-app-api</a> &gt; <a href="index.source.html" class="el_package">org.example.app.controller</a> &gt; <span class="el_source">GreetRequestController.java</span></div><h1>GreetRequestController.java</h1><pre class="source lang-java linenums">package org.example.app.controller;
+
+import org.example.app.constant.Commands;
+import org.example.app.constant.Errors;
+import org.example.app.request.GoRequest;
+import org.example.app.request.HelloRequest;
+import org.example.app.response.HelloResponse;
+import org.example.app.service.GreetingService;
+import com.tvd12.ezyfox.bean.annotation.EzyAutoBind;
+import com.tvd12.ezyfox.core.annotation.EzyDoHandle;
+import com.tvd12.ezyfox.core.annotation.EzyRequestController;
+import com.tvd12.ezyfox.core.exception.EzyBadRequestException;
+import com.tvd12.ezyfox.io.EzyStrings;
+import com.tvd12.ezyfoxserver.entity.EzyUser;
+import com.tvd12.ezyfoxserver.support.factory.EzyResponseFactory;
+
+@EzyRequestController
+<span class="nc" id="L18">public class GreetRequestController {</span>
+
+	@EzyAutoBind
+	private EzyResponseFactory responseFactory;
+	
+	@EzyAutoBind
+	private GreetingService greetingService;
+	
+	@EzyDoHandle(Commands.HELLO)
+	public void sayHello(EzyUser user, HelloRequest request) {
+<span class="nc bnc" id="L28" title="All 2 branches missed.">		if(EzyStrings.isNoContent(request.getNickName())) {</span>
+<span class="nc" id="L29">			throw new EzyBadRequestException(Errors.UNKNOWN, &quot;invalid nick name&quot;);</span>
+		}
+<span class="nc" id="L31">		responseFactory.newObjectResponse()</span>
+<span class="nc" id="L32">			.command(Commands.HELLO)</span>
+<span class="nc" id="L33">			.data(new HelloResponse(greetingService.hello(request.getNickName())))</span>
+<span class="nc" id="L34">			.user(user)</span>
+<span class="nc" id="L35">			.execute();</span>
+<span class="nc" id="L36">	}</span>
+	
+	@EzyDoHandle(Commands.GO)
+	public void sayGo(EzyUser user, GoRequest request) {
+<span class="nc bnc" id="L40" title="All 2 branches missed.">		if(EzyStrings.isNoContent(request.getNickName())) {</span>
+<span class="nc" id="L41">			throw new EzyBadRequestException(Errors.UNKNOWN, &quot;invalid nick name&quot;);</span>
+		}
+<span class="nc" id="L43">		responseFactory.newObjectResponse()</span>
+<span class="nc" id="L44">		.command(Commands.GO)</span>
+<span class="nc" id="L45">		.data(new HelloResponse(greetingService.go(request.getNickName())))</span>
+<span class="nc" id="L46">		.user(user)</span>
+<span class="nc" id="L47">		.execute();</span>
+<span class="nc" id="L48">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

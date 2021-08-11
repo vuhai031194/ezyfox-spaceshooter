@@ -1,0 +1,6 @@
+org\example\plugin\config\PluginConfig.class
+org\example\plugin\service\WelcomeService.class
+org\example\plugin\controller\ServerReadyController.class
+org\example\plugin\controller\UserLoginController.class
+org\example\plugin\PluginEntryLoader.class
+org\example\plugin\PluginEntry.class
