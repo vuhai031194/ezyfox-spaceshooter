@@ -4,7 +4,7 @@
 
     <test name="All">
     	<packages>
-    		<package name="org.example.common.test"/>
+    		<package name="com.tvd12.common.test"/>
     	</packages>
     </test>
 </suite>

@@ -3,7 +3,7 @@
 <suite name="AllTests">
 	<test name="All">
 		<packages>
-			<package name="org.example.test"></package>
+			<package name="com.tvd12.test"></package>
 		</packages>
 	</test>
 </suite>
