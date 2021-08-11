@@ -23,7 +23,7 @@
         <application>
 			<name>server</name>
 			<folder>server-app-entry</folder>
-			<entry-loader>org.example.app.AppEntryLoader</entry-loader>
+			<entry-loader>AppEntryLoader</entry-loader>
 			<config-file>config/config.properties</config-file>
 		</application>
 	</applications>
@@ -33,7 +33,7 @@
 			<name>server</name>
 			<folder>server-plugin</folder>
 			<priority>-1</priority>
-			<entry-loader>org.example.plugin.PluginEntryLoader</entry-loader>
+			<entry-loader>PluginEntryLoader</entry-loader>
 			<config-file>config/config.properties</config-file>
 			<listen-events>
 				<event>USER_LOGIN</event>
