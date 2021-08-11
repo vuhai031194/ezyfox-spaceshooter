@@ -42,8 +42,8 @@ public class AppEntry extends EzyDefaultAppEntry {
 	@Override
 	protected String[] getScanablePackages() {
 		return new String[] {
-				"org.example.common",
-				"org.example.app"
+				"com.tvd12.common",
+				"com.tvd12.app"
 		};
 	}
 }

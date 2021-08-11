@@ -1,20 +1,18 @@
 package com.tvd12.space_shooter;
 
-import com.tvd12.ezyfox.bean.EzyBeanContext;
-import com.tvd12.ezyfox.bean.EzyBeanContextBuilder;
-import com.tvd12.ezyfoxserver.app.EzyAppRequestController;
+import com.tvd12.app.AppEntry;
+import com.tvd12.app.AppEntryLoader;
 import com.tvd12.ezyfoxserver.constant.EzyEventType;
-import com.tvd12.ezyfoxserver.context.EzyAppContext;
-import com.tvd12.ezyfoxserver.context.EzyPluginContext;
 import com.tvd12.ezyfoxserver.embedded.EzyEmbeddedServer;
-import com.tvd12.ezyfoxserver.ext.EzyAbstractAppEntryLoader;
-import com.tvd12.ezyfoxserver.ext.EzyAbstractPluginEntryLoader;
 import com.tvd12.ezyfoxserver.ext.EzyAppEntry;
 import com.tvd12.ezyfoxserver.ext.EzyPluginEntry;
 import com.tvd12.ezyfoxserver.setting.*;
-import com.tvd12.ezyfoxserver.support.controller.EzyUserRequestAppSingletonController;
-import com.tvd12.ezyfoxserver.support.entry.EzySimpleAppEntry;
-import com.tvd12.ezyfoxserver.support.entry.EzySimplePluginEntry;
+import com.tvd12.plugin.PluginEntry;
+import com.tvd12.plugin.PluginEntryLoader;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class SpaceShooterStartup {
 
@@ -26,11 +24,11 @@ public class SpaceShooterStartup {
         EzyPluginSettingBuilder pluginSettingBuilder = new EzyPluginSettingBuilder()
                 .name(PLUGIN_NAME)
                 .addListenEvent(EzyEventType.USER_LOGIN)
-                .entryLoader(SpaceGamePluginEntryLoader.class);
+                .entryLoader(DecoratedPluginEntryLoader.class);
 
         EzyAppSettingBuilder appSettingBuilder = new EzyAppSettingBuilder()
                 .name(APP_NAME)
-                .entryLoader(SpaceGameAppEntryLoader.class);
+                .entryLoader(DecoratedAppEntryLoader.class);
 
         EzyZoneSettingBuilder zoneSettingBuilder = new EzyZoneSettingBuilder()
                 .name(ZONE_NAME)
@@ -63,65 +61,47 @@ public class SpaceShooterStartup {
         server.start();
     }
 
-    public static class SpaceGameAppEntry extends EzySimpleAppEntry {
+    public static class DecoratedPluginEntryLoader extends PluginEntryLoader {
 
         @Override
-        protected String[] getScanableBeanPackages() {
-            return new String[]{
-                    "com.tvd12.space_shooter"
+        public EzyPluginEntry load() throws Exception {
+            return new PluginEntry() {
+
+                @Override
+                protected String getConfigFile(EzyPluginSetting setting) {
+                    return Paths.get(getPluginPath(setting), "config", "config.properties")
+                            .toString();
+                }
+
+                private String getPluginPath(EzyPluginSetting setting) {
+                    Path pluginPath = Paths.get("server-plugin");
+                    if(!Files.exists(pluginPath))
+                        pluginPath = Paths.get("../server-plugin");
+                    return pluginPath.toString();
+                }
             };
-        }
-
-        @Override
-        protected String[] getScanableBindingPackages() {
-            return new String[]{
-                    "com.tvd12.space_shooter"
-            };
-        }
-
-        @Override
-        protected void setupBeanContext(EzyAppContext context, EzyBeanContextBuilder builder) {
-            builder.addProperties("application.yaml");
-        }
-
-        @Override
-        protected EzyAppRequestController newUserRequestController(EzyBeanContext beanContext) {
-            return EzyUserRequestAppSingletonController.builder()
-                    .beanContext(beanContext)
-                    .build();
-        }
-
-    }
-
-    public static class SpaceGameAppEntryLoader extends EzyAbstractAppEntryLoader {
-
-        @Override
-        public EzyAppEntry load() {
-            return new SpaceGameAppEntry();
-        }
-
-    }
-
-    public static class SpaceGamePluginEntry extends EzySimplePluginEntry {
-
-        @Override
-        protected String[] getScanableBeanPackages() {
-            return new String[]{
-                    "com.tvd12.space_shooter"
-            };
-        }
-
-        @Override
-        protected void setupBeanContext(EzyPluginContext context, EzyBeanContextBuilder builder) {
-            builder.addProperties("application.yaml");
         }
     }
 
-    public static class SpaceGamePluginEntryLoader extends EzyAbstractPluginEntryLoader {
+    public static class DecoratedAppEntryLoader extends AppEntryLoader {
 
         @Override
-        public EzyPluginEntry load() {
-            return new SpaceGamePluginEntry();
+        public EzyAppEntry load() throws Exception {
+            return new AppEntry() {
+
+                @Override
+                protected String getConfigFile(EzyAppSetting setting) {
+                    return Paths.get(getAppPath(), "config", "config.properties")
+                            .toString();
+                }
+
+                private String getAppPath() {
+                    Path pluginPath = Paths.get("server-app-entry");
+                    if(!Files.exists(pluginPath))
+                        pluginPath = Paths.get("../server-app-entry");
+                    return pluginPath.toString();
+                }
+            };
         }
     }
 }

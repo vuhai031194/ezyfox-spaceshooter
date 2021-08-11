@@ -12,6 +12,7 @@ import com.tvd12.ezydata.database.repository.EzyMaxIdRepository;
 import com.tvd12.ezyfox.bean.annotation.EzyAutoBind;
 import com.tvd12.ezyfox.core.annotation.EzyRequestController;
 import com.tvd12.ezyfox.core.annotation.EzyDoHandle;
+import com.tvd12.ezyfox.factory.EzyEntityFactory;
 import com.tvd12.ezyfox.util.EzyLoggable;
 import com.tvd12.ezyfoxserver.entity.EzyUser;
 import com.tvd12.ezyfoxserver.support.factory.EzyResponseFactory;
@@ -138,6 +139,7 @@ public class UserRequestController extends EzyLoggable {
                 request.isVisible(),
                 request.getPosition()
         );
+
         gameObjectPositionRepo.save(gameObjectPosition);
     }
 
