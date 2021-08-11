@@ -41,9 +41,11 @@ public class MongoConfig
                 .properties(properties)
                 .mongoClient(newMongoClient())
                 .databaseName(databaseName)
-                .scan("com.tvd12.space_shooter.entity")
-                .scan("com.tvd12.space_shooter.model")
-                .scan("com.tvd12.space_shooter.repo")
+                .scan("com.tvd12.plugin.entity")
+                .scan("com.tvd12.plugin.repo")
+                .scan("com.tvd12.app.entity")
+                .scan("com.tvd12.app.model")
+                .scan("com.tvd12.app.repo")
                 .build();
     }
 
