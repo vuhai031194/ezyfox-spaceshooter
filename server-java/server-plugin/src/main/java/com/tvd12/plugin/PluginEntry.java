@@ -48,8 +48,8 @@ public class PluginEntry extends EzyDefaultPluginEntry {
 	@Override
 	protected String[] getScanablePackages() {
 		return new String[] {
-			"org.example.common",
-			"org.example.plugin"
+			"com.tvd12.common",
+			"com.tvd12.plugin"
 		};
 	}
 }
